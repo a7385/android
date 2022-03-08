@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sample.ui">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Layout">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".layout.FrameActivity"
+            android:label="Frame"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".layout.LinearActivity"
+            android:label="Linear"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".layout.RelativeActivity"
+            android:label="Relative"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".layout.TableActivity"
+            android:label="Table"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".layout.ConstraintActivity"
+            android:label="Constraint"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.EditTextActivity"
+            android:label="Constraint"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.ImageViewActivity"
+            android:label="Constraint"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.ListViewActivity"
+            android:label="Constraint"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.SpinnerActivity"
+            android:label="Constraint"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.TextViewActivity"
+            android:label="Constraint"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.WebVIewActivity"
+            android:label="Constraint"
+            android:screenOrientation="portrait" />
+
+    </application>
+</manifest>

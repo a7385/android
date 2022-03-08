@@ -1,0 +1,17 @@
+package com.sample.ui.layout;
+
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.sample.ui.R;
+
+public class ConstraintActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //約束layout
+        setContentView(R.layout.activity_constraint);
+    }
+}
