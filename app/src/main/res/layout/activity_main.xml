@@ -165,22 +165,28 @@
         android:textAllCaps="false"
         android:textColor="@color/buttonTextColor"
         android:textSize="@dimen/buttonTextSize"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@id/listView"
         app:layout_constraintTop_toBottomOf="@id/textview" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="0dp"
+    <!--    view-->
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/buttonMargin"
-        android:text="Button"
-        android:textAllCaps="false"
-        android:textColor="@color/buttonTextColor"
-        android:textSize="@dimen/buttonTextSize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@id/imageView"
-        app:layout_constraintTop_toBottomOf="@id/textview" />
+        android:text="螢幕資訊"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleTextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listView" />
+
+    <TextView
+        android:id="@+id/screenInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen" />
 </androidx.constraintlayout.widget.ConstraintLayout>

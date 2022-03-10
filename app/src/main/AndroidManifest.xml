@@ -46,32 +46,32 @@
 
         <activity
             android:name=".view.EditTextActivity"
-            android:label="Constraint"
+            android:label="EditText"
             android:screenOrientation="portrait" />
 
         <activity
             android:name=".view.ImageViewActivity"
-            android:label="Constraint"
+            android:label="ImageView"
             android:screenOrientation="portrait" />
 
         <activity
             android:name=".view.ListViewActivity"
-            android:label="Constraint"
+            android:label="ListView"
             android:screenOrientation="portrait" />
 
         <activity
             android:name=".view.SpinnerActivity"
-            android:label="Constraint"
+            android:label="Spinner"
             android:screenOrientation="portrait" />
 
         <activity
             android:name=".view.TextViewActivity"
-            android:label="Constraint"
+            android:label="TextView"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".view.WebVIewActivity"
-            android:label="Constraint"
+            android:name=".view.WebViewActivity"
+            android:label="WebVIew"
             android:screenOrientation="portrait" />
 
     </application>

@@ -2,12 +2,11 @@ package com.sample.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import com.sample.ui.layout.ConstraintActivity;
@@ -15,8 +14,11 @@ import com.sample.ui.layout.FrameActivity;
 import com.sample.ui.layout.LinearActivity;
 import com.sample.ui.layout.RelativeActivity;
 import com.sample.ui.layout.TableActivity;
+import com.sample.ui.view.EditTextActivity;
 import com.sample.ui.view.ImageViewActivity;
+import com.sample.ui.view.ListViewActivity;
 import com.sample.ui.view.SpinnerActivity;
+import com.sample.ui.view.TextViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,6 +57,19 @@ public class MainActivity extends AppCompatActivity {
         Button imageViewBtn = findViewById(R.id.imageView);
         imageViewBtn.setOnClickListener(onClickListener);
 
+
+        TextView screenInfo = findViewById(R.id.screenInfo);
+        //取得螢幕寬高密度
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        screenInfo.setText("screenWidth:" + dm.widthPixels + "  "
+                + "screenHeight:" + dm.heightPixels + "\n"
+                + "xdp(寬):" + dm.xdpi + "  "
+                + "ydp(高):" + dm.ydpi + "\n"
+                + "density:" + dm.density + "  "
+                + "scaledDensity:" + dm.scaledDensity + "  "
+                + "dpi:" + dm.densityDpi);
+
     }
 
     private View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -79,16 +94,16 @@ public class MainActivity extends AppCompatActivity {
                     intent.setClass(MainActivity.this, ConstraintActivity.class);
                     break;
                 case R.id.textview:
-                    intent.setClass(MainActivity.this, TextView.class);
+                    intent.setClass(MainActivity.this, TextViewActivity.class);
                     break;
                 case R.id.editText:
-                    intent.setClass(MainActivity.this, EditText.class);
+                    intent.setClass(MainActivity.this, EditTextActivity.class);
                     break;
                 case R.id.spinner:
                     intent.setClass(MainActivity.this, SpinnerActivity.class);
                     break;
                 case R.id.listView:
-                    intent.setClass(MainActivity.this, ListActivity.class);
+                    intent.setClass(MainActivity.this, ListViewActivity.class);
                     break;
                 case R.id.imageView:
                     intent.setClass(MainActivity.this, ImageViewActivity.class);

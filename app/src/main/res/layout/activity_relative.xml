@@ -10,91 +10,119 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="top &amp; left"
         android:textColor="@color/white"
-        android:textSize="@dimen/textSize"
-        android:text="top &amp; left"/>
+        android:textSize="@dimen/textSize" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="top &amp; horizontal"
         android:textColor="@color/white"
-        android:textSize="@dimen/textSize"
-        android:text="top &amp; horizontal"/>
+        android:textSize="@dimen/textSize" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
+        android:text="top &amp; right"
         android:textColor="@color/white"
-        android:textSize="@dimen/textSize"
-        android:text="top &amp; right"/>
+        android:textSize="@dimen/textSize" />
+
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
+        android:layout_above="@id/center"
+        android:layout_centerInParent="true"
+        android:text="above"
+        android:textColor="#aaaaaa"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center"
+        android:layout_centerInParent="true"
+        android:text="below"
+        android:textColor="#aaaaaa"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/center"
+        android:text="toLeftOf "
+        android:textColor="#aaaaaa"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/center"
+        android:text=" toRightOf"
+        android:textColor="#aaaaaa"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="left &amp;\nvertical"
         android:textColor="@color/white"
-        android:textSize="@dimen/textSize"
-        android:text="left &amp; vertical"/>
+        android:textSize="@dimen/textSize" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/white"
-        android:textSize="@dimen/textSize"
-        android:text="center"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:textColor="@color/white"
-        android:textSize="@dimen/textSize"
-        android:text="left &amp; vertical"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="right &amp;\nvertical"
         android:textColor="@color/white"
-        android:textSize="@dimen/textSize"
-        android:text="right &amp; vertical"/>
+        android:textSize="@dimen/textSize" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
+        android:text="bottom &amp; horizontal"
         android:textColor="@color/white"
-        android:textSize="@dimen/textSize"
-        android:text="bottom &amp; horizontal"/>
+        android:textSize="@dimen/textSize" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="left &amp; bottom"
         android:textColor="@color/white"
-        android:textSize="@dimen/textSize"
-        android:text="left &amp; bottom"/>
+        android:textSize="@dimen/textSize" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="bottom &amp; right"
         android:textColor="@color/white"
-        android:textSize="@dimen/textSize"
-        android:text="bottom &amp; right"/>
+        android:textSize="@dimen/textSize" />
 
 </RelativeLayout>

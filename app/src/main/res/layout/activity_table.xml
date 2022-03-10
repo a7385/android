@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    android:stretchColumns="1,2,3"
+    android:stretchColumns="0,1,2"
     tools:context=".MainActivity">
 
     <TableRow
@@ -15,22 +15,22 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:text="row1"
+            android:layout_marginHorizontal="5dp"
+            android:text="span 1"
             android:textColor="@color/white" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:text="row1"
+            android:layout_marginHorizontal="5dp"
+            android:text="span 1"
             android:textColor="@color/white" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:text="row1"
+            android:layout_marginHorizontal="5dp"
+            android:text="span 1"
             android:textColor="@color/white" />
     </TableRow>
 
@@ -41,16 +41,16 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
+            android:layout_marginHorizontal="5dp"
             android:layout_span="2"
-            android:text="row2"
+            android:text="span 2"
             android:textColor="@color/white" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:text="row2"
+            android:layout_marginHorizontal="5dp"
+            android:text="span 1"
             android:textColor="@color/white" />
 
     </TableRow>
@@ -62,9 +62,9 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
+            android:layout_marginHorizontal="5dp"
             android:layout_span="3"
-            android:text="row3"
+            android:text="span 3"
             android:textColor="@color/white" />
 
     </TableRow>

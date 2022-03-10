@@ -11,7 +11,6 @@ public class TableActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //表格layout
         setContentView(R.layout.activity_table);
     }
 }
