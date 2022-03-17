@@ -19,6 +19,7 @@ import com.sample.ui.view.ImageViewActivity;
 import com.sample.ui.view.ListViewActivity;
 import com.sample.ui.view.SpinnerActivity;
 import com.sample.ui.view.TextViewActivity;
+import com.sample.ui.view.ViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -57,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
         Button imageViewBtn = findViewById(R.id.imageView);
         imageViewBtn.setOnClickListener(onClickListener);
 
+        Button viewBtn = findViewById(R.id.viewBtn);
+        viewBtn.setOnClickListener(onClickListener);
 
         TextView screenInfo = findViewById(R.id.screenInfo);
         //取得螢幕寬高密度
@@ -107,6 +110,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.imageView:
                     intent.setClass(MainActivity.this, ImageViewActivity.class);
+                    break;
+                case R.id.viewBtn:
+                    intent.setClass(MainActivity.this, ViewActivity.class);
                     break;
             }
             startActivity(intent);

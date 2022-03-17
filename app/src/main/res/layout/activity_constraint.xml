@@ -60,6 +60,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frame" />
 
+
     <Button
         android:id="@+id/constraint"
         android:layout_width="0dp"
@@ -72,5 +73,65 @@
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/table"
         app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="above"
+        android:textColor="#aaaaaa"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toTopOf="@+id/center"
+        app:layout_constraintEnd_toEndOf="@+id/center"
+        app:layout_constraintStart_toStartOf="@+id/center" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center"
+        android:layout_centerInParent="true"
+        android:text="below"
+        android:textColor="#aaaaaa"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toEndOf="@+id/center"
+        app:layout_constraintStart_toStartOf="@+id/center"
+        app:layout_constraintTop_toBottomOf="@+id/center" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="toLeftOf "
+        android:textColor="#aaaaaa"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/center"
+        app:layout_constraintEnd_toStartOf="@+id/center"
+        app:layout_constraintTop_toTopOf="@+id/center" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/center"
+        android:text=" toRightOf"
+        android:textColor="#aaaaaa"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/center"
+        app:layout_constraintStart_toEndOf="@+id/center"
+        app:layout_constraintTop_toTopOf="@+id/center" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,12 +12,11 @@
         android:id="@+id/layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Layout"
+        android:text="@string/layout"
         android:textColor="@color/white"
         android:textSize="@dimen/titleTextSize"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <Button
         android:id="@+id/frame"
@@ -143,6 +142,20 @@
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <Button
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/buttonMargin"
+        android:text="ImageView"
+        android:textAllCaps="false"
+        android:textColor="@color/buttonTextColor"
+        android:textSize="@dimen/buttonTextSize"
+        app:layout_constraintEnd_toStartOf="@id/listView"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textview" />
+
+    <Button
         android:id="@+id/listView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -151,17 +164,17 @@
         android:textAllCaps="false"
         android:textColor="@color/buttonTextColor"
         android:textSize="@dimen/buttonTextSize"
-        app:layout_constraintEnd_toStartOf="@id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/viewBtn"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/textview" />
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/textview" />
 
     <Button
-        android:id="@+id/imageView"
+        android:id="@+id/viewBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/buttonMargin"
-        android:text="ImageView"
+        android:text="View"
         android:textAllCaps="false"
         android:textColor="@color/buttonTextColor"
         android:textSize="@dimen/buttonTextSize"

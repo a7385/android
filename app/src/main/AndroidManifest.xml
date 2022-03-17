@@ -74,5 +74,12 @@
             android:label="WebVIew"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".view.ViewActivity"
+            android:label="View"
+            android:screenOrientation="portrait" />
+
+
     </application>
+<!--    <uses-permission android:name="android.permission.INTERNET" />-->
 </manifest>

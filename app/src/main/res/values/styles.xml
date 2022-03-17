@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="purpleTitleStyle">
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textSize">@dimen/titleTextSize</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="redTitleStyle">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textSize">@dimen/titleTextSize</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

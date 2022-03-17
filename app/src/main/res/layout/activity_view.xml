@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/purpleTitleStyle"
+        android:text="PurpleTitleStyle" />
+
+    <TextView
+        style="@style/redTitleStyle"
+        android:text="PurpleTitleStyle" />
+
+    <include layout="@layout/view_product_circle" />
+
+    <com.sample.ui.view.CircleImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/flag" />
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 畫面轉移旋轉動畫效果 -->
+    <!--
+    fromDegrees開始角度
+    toDegrees結束角度
+    pivotX設定旋轉時的X軸座標
+    -->
+    <rotate
+		android:duration="2000"
+		android:fromDegrees="0"
+		android:toDegrees="720"
+		android:pivotX="50%"
+		android:pivotY="50%" />
+</set>

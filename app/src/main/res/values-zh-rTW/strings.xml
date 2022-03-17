@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">佈局</string>
+    <string name="layout">佈局</string>
+    <string name="selectYear">選擇年</string>
+    <string name="selectMonth">選擇月</string>
+</resources>
