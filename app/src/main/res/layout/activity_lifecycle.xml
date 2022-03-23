@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleTextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="activity:"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toStartOf="@+id/task"
+        app:layout_constraintTop_toBottomOf="@+id/task" />
+
+    <Button
+        android:id="@+id/addActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/buttonMargin"
+        android:text="add"
+        android:textAllCaps="false"
+        android:textColor="@color/buttonTextColor"
+        android:textSize="@dimen/buttonTextSize"
+        app:layout_constraintEnd_toStartOf="@+id/removeActivity"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="@+id/activity"
+        app:layout_constraintTop_toBottomOf="@+id/activity" />
+
+    <Button
+        android:id="@+id/removeActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/buttonMargin"
+        android:text="remove"
+        android:textAllCaps="false"
+        android:textColor="@color/buttonTextColor"
+        android:textSize="@dimen/buttonTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/addActivity"
+        app:layout_constraintTop_toBottomOf="@+id/activity" />
+
+    <TextView
+        android:id="@+id/lifecycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Lifecycle"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleTextSize"
+        app:layout_constraintStart_toStartOf="@+id/task"
+        app:layout_constraintTop_toBottomOf="@+id/addActivity" />
+
+    <TextView
+        android:id="@+id/onCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onCreate:"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toStartOf="@+id/task"
+        app:layout_constraintTop_toBottomOf="@+id/lifecycle" />
+
+    <TextView
+        android:id="@+id/onStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onStart:"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toStartOf="@+id/task"
+        app:layout_constraintTop_toBottomOf="@+id/onCreate" />
+
+    <TextView
+        android:id="@+id/onResume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onResume:"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toStartOf="@+id/task"
+        app:layout_constraintTop_toBottomOf="@+id/onStart" />
+
+    <TextView
+        android:id="@+id/onPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onPause:"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toStartOf="@+id/task"
+        app:layout_constraintTop_toBottomOf="@+id/onResume" />
+
+    <TextView
+        android:id="@+id/onStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onStop:"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toStartOf="@+id/task"
+        app:layout_constraintTop_toBottomOf="@+id/onPause" />
+
+    <TextView
+        android:id="@+id/onDestroy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onDestroy:"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toStartOf="@+id/task"
+        app:layout_constraintTop_toBottomOf="@+id/onStop" />
+
+    <TextView
+        android:id="@+id/onRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onRestart:"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toStartOf="@+id/task"
+        app:layout_constraintTop_toBottomOf="@+id/onDestroy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

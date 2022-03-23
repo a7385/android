@@ -15,8 +15,12 @@ public class WebViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_webview);
+        String scheme = getIntent().getScheme();
+        if (scheme != null && scheme.equals("test")) {
+            url = getIntent().getData().getQueryParameter("url");
+        }
 
+        setContentView(R.layout.activity_webview);
         WebView wv = findViewById(R.id.web);
 
         //no catch

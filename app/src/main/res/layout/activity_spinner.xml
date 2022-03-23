@@ -43,8 +43,8 @@
             android:id="@+id/month"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:prompt="@string/selectYear"
-            android:spinnerMode="dialog" />
+            android:prompt="@string/selectMonth"
+            android:spinnerMode="dropdown" />
 
         <TextView
             android:layout_width="wrap_content"

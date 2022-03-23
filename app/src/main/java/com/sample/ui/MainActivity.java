@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.sample.ui.activity.IntentActivity;
+import com.sample.ui.activity.LifecycleActivity;
+import com.sample.ui.data.SharedPreferencesActivity;
 import com.sample.ui.layout.ConstraintActivity;
 import com.sample.ui.layout.FrameActivity;
 import com.sample.ui.layout.LinearActivity;
@@ -60,6 +63,16 @@ public class MainActivity extends AppCompatActivity {
 
         Button viewBtn = findViewById(R.id.viewBtn);
         viewBtn.setOnClickListener(onClickListener);
+
+        Button lifeCycleBtn = findViewById(R.id.lifeCycle);
+        lifeCycleBtn.setOnClickListener(onClickListener);
+
+        Button intentBtn = findViewById(R.id.intent);
+        intentBtn.setOnClickListener(onClickListener);
+
+        Button sharedPreferencesBtn = findViewById(R.id.sharedPreferences);
+        sharedPreferencesBtn.setOnClickListener(onClickListener);
+
 
         TextView screenInfo = findViewById(R.id.screenInfo);
         //取得螢幕寬高密度
@@ -113,6 +126,15 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.viewBtn:
                     intent.setClass(MainActivity.this, ViewActivity.class);
+                    break;
+                case R.id.lifeCycle:
+                    intent.setClass(MainActivity.this, LifecycleActivity.class);
+                    break;
+                case R.id.intent:
+                    intent.setClass(MainActivity.this, IntentActivity.class);
+                    break;
+                case R.id.sharedPreferences:
+                    intent.setClass(MainActivity.this, SharedPreferencesActivity.class);
                     break;
             }
             startActivity(intent);
