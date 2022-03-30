@@ -11,17 +11,23 @@ import android.widget.TextView;
 
 import com.sample.ui.activity.IntentActivity;
 import com.sample.ui.activity.LifecycleActivity;
+import com.sample.ui.data.FileActivity;
+import com.sample.ui.data.SQLiteActivity;
 import com.sample.ui.data.SharedPreferencesActivity;
 import com.sample.ui.layout.ConstraintActivity;
 import com.sample.ui.layout.FrameActivity;
 import com.sample.ui.layout.LinearActivity;
 import com.sample.ui.layout.RelativeActivity;
 import com.sample.ui.layout.TableActivity;
+import com.sample.ui.notification.NotificationActivity;
+import com.sample.ui.service.MyService;
+import com.sample.ui.thread.OkhttpActivity;
 import com.sample.ui.view.EditTextActivity;
 import com.sample.ui.view.ImageViewActivity;
 import com.sample.ui.view.ListViewActivity;
 import com.sample.ui.view.SpinnerActivity;
 import com.sample.ui.view.TextViewActivity;
+import com.sample.ui.thread.TimerActivity;
 import com.sample.ui.view.ViewActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -73,6 +79,21 @@ public class MainActivity extends AppCompatActivity {
         Button sharedPreferencesBtn = findViewById(R.id.sharedPreferences);
         sharedPreferencesBtn.setOnClickListener(onClickListener);
 
+        Button fileBtn = findViewById(R.id.file);
+        fileBtn.setOnClickListener(onClickListener);
+
+        Button notificationBtn = findViewById(R.id.notification);
+        notificationBtn.setOnClickListener(onClickListener);
+
+        Button timerBtn = findViewById(R.id.timer);
+        timerBtn.setOnClickListener(onClickListener);
+
+        Button okhttpBtn = findViewById(R.id.okhttp);
+        okhttpBtn.setOnClickListener(onClickListener);
+
+
+        Button sqliteBtn = findViewById(R.id.sqlite);
+        sqliteBtn.setOnClickListener(onClickListener);
 
         TextView screenInfo = findViewById(R.id.screenInfo);
         //取得螢幕寬高密度
@@ -86,6 +107,8 @@ public class MainActivity extends AppCompatActivity {
                 + "scaledDensity:" + dm.scaledDensity + "  "
                 + "dpi:" + dm.densityDpi);
 
+        //啟動服務
+//        startService(new Intent(MainActivity.this, MyService.class));
     }
 
     private View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -136,8 +159,31 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.sharedPreferences:
                     intent.setClass(MainActivity.this, SharedPreferencesActivity.class);
                     break;
+                case R.id.file:
+                    intent.setClass(MainActivity.this, FileActivity.class);
+                    break;
+                case R.id.notification:
+                    intent.setClass(MainActivity.this, NotificationActivity.class);
+                    break;
+                case R.id.timer:
+                    intent.setClass(MainActivity.this, TimerActivity.class);
+                    break;
+                case R.id.okhttp:
+                    intent.setClass(MainActivity.this, OkhttpActivity.class);
+                    break;
+                case R.id.sqlite:
+                    intent.setClass(MainActivity.this, SQLiteActivity.class);
+                    break;
             }
             startActivity(intent);
         }
     };
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+//關閉服務
+//        stopService(new Intent(MainActivity.this, MyService.class));
+    }
+
 }

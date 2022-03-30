@@ -102,6 +102,7 @@ public class LifecycleActivity extends AppCompatActivity {
         super.onDestroy();
         //通常都拿來把onCreate()時的資料做釋放的動作
         m_TextView_onDestroy.setText("onDestroy: " + getTimeString());
+
         Log.d("LifecycleActivity", "onDestroy: " + getTimeString());
     }
 

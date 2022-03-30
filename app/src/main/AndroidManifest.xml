@@ -14,7 +14,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -123,9 +122,37 @@
             android:label="SharedPreferences"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".data.FileActivity"
+            android:label="File"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".data.SQLiteActivity"
+            android:label="SQLite"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".notification.NotificationActivity"
+            android:label="notification"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".thread.TimerActivity"
+            android:label="Timer"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".thread.OkhttpActivity"
+            android:label="Okhttp"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".service.MyService"></service>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE"
+        android:required="true" />
 
 </manifest>
