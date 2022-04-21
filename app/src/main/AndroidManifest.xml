@@ -147,12 +147,61 @@
             android:label="Okhttp"
             android:screenOrientation="portrait" />
 
-        <service android:name=".service.MyService"></service>
+        <activity
+            android:name=".google.FcmActivity"
+            android:label="FCM"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".google.YoutubeActivity"
+            android:label="Youtube"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.CameraActivity"
+            android:label="Camera"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".google.GoogleMapActivity"
+            android:label="GoogleMap"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".service.MyService" />
+        <service
+            android:name=".service.FcmService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!--       google map 需在GCP 建立 api key-->
+<!--        <meta-data-->
+<!--            android:name="com.google.android.gms.version"-->
+<!--            android:value="@integer/google_play_services_version" />-->
+
+<!--        <meta-data-->
+<!--            android:name="com.google.android.geo.API_KEY"-->
+<!--            android:value="gcp Maps SDK for Android key" />-->
+
+
     </application>
+
+    <!--引用外部APP-->
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission
         android:name="android.permission.FOREGROUND_SERVICE"
         android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>

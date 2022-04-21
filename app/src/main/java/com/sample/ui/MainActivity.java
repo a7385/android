@@ -9,11 +9,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.sample.ui.activity.CameraActivity;
 import com.sample.ui.activity.IntentActivity;
 import com.sample.ui.activity.LifecycleActivity;
 import com.sample.ui.data.FileActivity;
 import com.sample.ui.data.SQLiteActivity;
 import com.sample.ui.data.SharedPreferencesActivity;
+import com.sample.ui.google.FcmActivity;
+import com.sample.ui.google.GoogleMapActivity;
+import com.sample.ui.google.YoutubeActivity;
 import com.sample.ui.layout.ConstraintActivity;
 import com.sample.ui.layout.FrameActivity;
 import com.sample.ui.layout.LinearActivity;
@@ -35,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         Button frameBtn = findViewById(R.id.frame);
@@ -91,9 +96,20 @@ public class MainActivity extends AppCompatActivity {
         Button okhttpBtn = findViewById(R.id.okhttp);
         okhttpBtn.setOnClickListener(onClickListener);
 
-
         Button sqliteBtn = findViewById(R.id.sqlite);
         sqliteBtn.setOnClickListener(onClickListener);
+
+        Button fcmBtn = findViewById(R.id.fcm);
+        fcmBtn.setOnClickListener(onClickListener);
+
+        Button youtubeBtn = findViewById(R.id.youtube);
+        youtubeBtn.setOnClickListener(onClickListener);
+
+        Button cameraBtn = findViewById(R.id.camera);
+        cameraBtn.setOnClickListener(onClickListener);
+
+        Button googleMapBtn = findViewById(R.id.googleMap);
+        googleMapBtn.setOnClickListener(onClickListener);
 
         TextView screenInfo = findViewById(R.id.screenInfo);
         //取得螢幕寬高密度
@@ -173,6 +189,18 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.sqlite:
                     intent.setClass(MainActivity.this, SQLiteActivity.class);
+                    break;
+                case R.id.fcm:
+                    intent.setClass(MainActivity.this, FcmActivity.class);
+                    break;
+                case R.id.youtube:
+                    intent.setClass(MainActivity.this, YoutubeActivity.class);
+                    break;
+                case R.id.camera:
+                    intent.setClass(MainActivity.this, CameraActivity.class);
+                    break;
+                case R.id.googleMap:
+                    intent.setClass(MainActivity.this, GoogleMapActivity.class);
                     break;
             }
             startActivity(intent);

@@ -318,7 +318,7 @@
             android:textAllCaps="false"
             android:textColor="@color/buttonTextColor"
             android:textSize="@dimen/buttonTextSize"
-            app:layout_constraintEnd_toStartOf="@+id/okhttp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_weight="1"
             app:layout_constraintStart_toEndOf="@+id/notification"
             app:layout_constraintTop_toBottomOf="@+id/other" />
@@ -333,10 +333,80 @@
             android:textAllCaps="false"
             android:textColor="@color/buttonTextColor"
             android:textSize="@dimen/buttonTextSize"
+            app:layout_constraintEnd_toStartOf="@+id/camera"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="@+id/other"
+            app:layout_constraintTop_toBottomOf="@+id/notification" />
+
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/buttonMargin"
+            android:layout_marginTop="4dp"
+            android:text="camera"
+            android:textAllCaps="false"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_weight="1"
-            app:layout_constraintStart_toEndOf="@+id/timer"
-            app:layout_constraintTop_toBottomOf="@+id/other" />
+            app:layout_constraintStart_toEndOf="@+id/okhttp"
+            app:layout_constraintTop_toBottomOf="@+id/notification" />
+
+        <TextView
+            android:id="@+id/google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="google"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titleTextSize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/okhttp" />
+
+        <Button
+            android:id="@+id/fcm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/buttonMargin"
+            android:layout_marginTop="4dp"
+            android:text="FCM"
+            android:textAllCaps="false"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"
+            app:layout_constraintEnd_toStartOf="@+id/youtube"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="@+id/google"
+            app:layout_constraintTop_toBottomOf="@+id/google" />
+
+        <Button
+            android:id="@+id/youtube"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/buttonMargin"
+            android:layout_marginTop="4dp"
+            android:text="youtube"
+            android:textAllCaps="false"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"
+            app:layout_constraintEnd_toStartOf="@+id/googleMap"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/fcm"
+            app:layout_constraintTop_toBottomOf="@+id/google" />
+
+        <Button
+            android:id="@+id/googleMap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/buttonMargin"
+            android:layout_marginTop="4dp"
+            android:text="googleMap"
+            android:textAllCaps="false"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1.2"
+            app:layout_constraintStart_toEndOf="@+id/youtube"
+            app:layout_constraintTop_toBottomOf="@+id/google" />
 
         <TextView
             android:id="@+id/screen"
@@ -346,7 +416,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/titleTextSize"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/timer" />
+            app:layout_constraintTop_toBottomOf="@+id/fcm" />
 
         <TextView
             android:id="@+id/screenInfo"
